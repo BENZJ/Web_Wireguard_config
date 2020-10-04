@@ -1,0 +1,59 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<header class="jumbotron" style="background-color:#A9F16C">
+  <div class="container">
+    <div class="row">
+      <h1>Wireguard Config Page</h1>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+{{if .flash.success}}
+<div class="alert alert-success">
+	{{.flash.success}}
+</div>
+{{end}}
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">菜鸟教程</a>
+  </div>
+  <div>
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#">iOS</a></li>
+          <li><a href="#">SVN</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Java
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">jmeter</a></li>
+                  <li><a href="#">EJB</a></li>
+                  <li><a href="#">Jasper Report</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">分离的链接</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">另一个分离的链接</a></li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+
+<form action="/App/Loginout" method="POST">
+    <input type="submit" value="登出" />
+</form>
+<!-- <div class="container">
+  <div class="row">
+    <div class="span6">
+      {{template "flash.html" .}}
+    </div>
+  </div>
+</div> -->
+
+{{template "footer.html" .}}
