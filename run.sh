@@ -23,6 +23,11 @@ go get github.com/revel/cmd/revel
 
 
 git clone https://github.com/BENZJ/Web_Wireguard_config
-cd Web_Wireguard_config
 
-revel package wgconfig
+revel package Web_Wireguard_config
+
+mkdir wgconfig
+
+tar -zxvf ./Web_Wireguard_config/Web_Wireguard_config.tar.gz  -C ./wgconfig
+
+
