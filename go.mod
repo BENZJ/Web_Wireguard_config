@@ -23,4 +23,4 @@ require (
 	gopkg.in/stack.v0 v0.0.0-20141108040640-9b43fcefddd0 // indirect
 )
 
-replace benzj/wgconfig/app/models => /Users/benz/go/src/benzj/wgconfig/app/models
+// replace benzj/wgconfig/app/models => /Users/benz/go/src/benzj/wgconfig/app/models

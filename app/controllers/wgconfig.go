@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	// "benzj/wgconfig/app/models"
 	"fmt"
 	"github.com/revel/revel"
 	"io/ioutil"

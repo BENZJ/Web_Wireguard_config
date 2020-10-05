@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"benzj/wgconfig/app/models"
 	"bufio"
 	"fmt"
 	"github.com/revel/revel"
@@ -20,9 +19,6 @@ func (c App) Index() revel.Result {
 }
 
 func (c App) Login(myName string, myPassword string) revel.Result {
-	xxuser := new(models.User)
-	xxuser.Username = "hello"
-
 	file, err := os.Open(path_userconf)
 	if err != nil {
 		fmt.Println("读取失败")
@@ -45,11 +41,6 @@ func (c App) Login(myName string, myPassword string) revel.Result {
 		c.Flash.Error("Login failed")
 		return c.Redirect(App.Index)
 	}
-
-	fmt.Println(myName)
-	fmt.Println(myPassword)
-	fmt.Println(xxuser.Username)
-	return c.Render()
 }
 
 func (c App) Loginout() revel.Result {
