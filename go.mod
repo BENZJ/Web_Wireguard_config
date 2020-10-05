@@ -3,7 +3,7 @@ module wgconfig
 go 1.15
 
 require (
-	benzj/wgconfig/app/models v0.0.0-00010101000000-000000000000
+	// benzj/wgconfig/app/models v0.0.0-00010101000000-000000000000
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/garyburd/redigo v1.6.2 // indirect
