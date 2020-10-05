@@ -5,3 +5,4 @@ app/models/go.mod
 app/models/go.sum
 user.conf
 wg0.conf
+*.tar.gz
